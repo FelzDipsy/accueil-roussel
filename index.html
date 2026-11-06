@@ -10,8 +10,9 @@
 <link rel="stylesheet" href="dist/output.css">
 </head>
 <body>
-    <header>
-        <div class=" flex ml-auto justify-between items-center max-w-full">
+    <header class="bg-creme  px-4 py-4 flex flex-col gap-4">
+       
+        <div class=" flex justify-between items-center max-w-full">
             
             <a class="flex items-center gap-2" href="#">
                 <img src="images/logo-roussel.svg" alt="logo">
@@ -19,14 +20,75 @@
             </a>
             <a class=" bg-framboise text-white py-2 px-5 rounded-full font-texte font-semibold" href="#">Commander</a>
         </div>
-        <nav>
-            <ul>
+        <nav >
+            <ul class="flex justify-between items-center">
                 <li><a href="#">Bouquets</a></li>
                 <li><a href="#">Ateliers</a></li>
                 <li><a href="#">Livraison</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
+    
+        
     </header>
+
+    <main>
+        <section class="pb-16 px-4 bg-creme">
+            <div class="flex flex-col">
+                <p class="mt-8 mb-4 text-xs font-texte font-semibold text-sauge tracking-[10%]">ARTISAN FLEURISTE À BLOIS DEPUIS 1998</p>
+                <h1 class=" text-4xl font-titre font-bold text-encre ">Des fleurs de saison, composés à la main</h1>
+                <p class=" mt-6 mb-8 font-texte font-normal text-lg text-encre">Bouquets du marché, roses anciennes et compositions champêtres : chaque semaine, Madame Roussel choisit les plus belles fleurs des producteurs de la région </p>
+            </div>
+            <div class=" flex flex-col gap-4">
+                <a class=" text-base bg-framboise text-white py-3 px-27.875 rounded-full font-texte font-semibold text-center" href="#">Voir les bouquets</a>
+                <a class=" mb-10 text-base text-encre py-3 px-27.875 rounded-full font-texte font-semibold border border-framboise text-center" href="#">Nos ateliers</a>
+            </div>
+            <div>
+                <img  class="rounded-3xl" src="images/bouquet-vase.svg" alt="bouquet">
+            </div>
+        </section>
+    
+        <section class="flex flex-col px-4 py-16">
+            <div>
+                <h2 class="font-titre font-bold text-3xl text-encre">Les bouquets de la semaine</h2>
+                <p class="text-encre font-texte font-normal text-base pt-4 pb-10">Trois compositions renouvelées chaque lundi, en taille moyenne. Livraison possible le jour même à Blois.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-creme grid-cols-1 rounded-2xl">
+                        <img class="rounded-t-2xl" src="images/bouquet-marche.svg" alt="bouquet 1">
+                        <div class="p-6">
+                            <h3 class="font-titre font-bold text-xl text-encre">Le bouquet du marché</h3>
+                            <p class="font-texte font-normal text-sm text-encre">Renoncules, marguerites et brins de lavande, au gré des arrivages.</p>
+                        </div>
+                    <div class="flex justify-between items-center p-6">
+                        <p class="font-texte font-semibold text-lg text-bordeaux">35 €</p>
+                        <a class="font-texte font-semibold text-base text-framboise" href="#">Commander</a>
+                    </div>
+                </div>
+                <div class="bg-creme grid-cols-2 rounded-2xl">
+                        <img class="rounded-t-2xl" src="images/bouquet-roses.svg" alt="bouquet 2">
+                        <div class="p-6">
+                            <h3 class="font-titre font-bold text-xl text-encre">Roses anciennes</h3>
+                            <p class="font-texte font-normal text-sm text-encre">Roses parfumées d'un rosiériste de Touraine, en camaïeu de framboise.</p>
+                        </div>
+                    <div class="flex justify-between items-center p-6">
+                        <p class="font-texte font-semibold text-lg text-bordeaux">45 €</p>
+                        <a class="font-texte font-semibold text-base text-framboise" href="#">Commander</a>
+                    </div>
+                </div>
+                <div class="bg-creme grid-cols-3 rounded-2xl">
+                        <img class="rounded-t-2xl" src="images/bouquet-champetre.svg" alt="bouquet 3">
+                        <div class="p-6">
+                            <h3 class="font-titre font-bold text-xl  text-encre">Champêtre</h3>
+                            <p class="font-texte font-normal text-sm text-encre">Fleurs des champs, lavande et feuillages, comme une promenade en bord de Loire.</p>
+                        </div>
+                    <div class="flex justify-between items-center p-6">
+                        <p class="font-texte font-semibold text-lg text-bordeaux">39 €</p>
+                        <a class="font-texte font-semibold text-base text-framboise" href="#">Commander</a>
+                    </div>
+                </div>
+        </section>
+        
+    </main>
 </body>
 </html>
